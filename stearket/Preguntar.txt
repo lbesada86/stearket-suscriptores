@@ -1,0 +1,17 @@
+-cuando ingreso un usuario quiero que el boton volver aparezca dentro del recuadro principal
+-ver como generar relacion entre usuario y genero en la tabla interes
+
+
+------
+
+
+insertar nueva relacion interes usuario genero:
+
+INSERT INTO `interes` (`id_interes`, `usuario`, `genero`) VALUES (NULL, '1', '5');
+
+Muestra nombre de usuario y generos de interes:
+
+SELECT usuarios.nombre, generos.descripcion FROM usuarios
+JOIN interes ON id_usuario=interes.usuario
+JOIN generos ON id_gen=interes.genero
+WHERE id_usuario=1a
